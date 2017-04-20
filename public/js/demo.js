@@ -371,7 +371,8 @@ function showVizualization(theProfile) {
 
   function onSampleTextChange() {
     var isEnglish = $('#english_radio').is(':checked');
-    language = isEnglish ? 'en' : 'es';
+    var isFrench = $('#french_radio').is(':checked');
+    language = isEnglish ? 'en' : (isFrench ? 'fr' : 'es');
 
     $.get('/text/' + language + '.txt').done(function(text) {
       $content.val(text);

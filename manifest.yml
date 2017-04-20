@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: ov-perso-insights
+  host: ov-perso-insights
+  disk_quota: 1024M
+  services:
+  - ov-perso-insights-personality_insights
